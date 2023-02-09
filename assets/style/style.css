@@ -2,14 +2,167 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans', 'Noto Sans JP';
+}
+
+body{
+  max-width: 1200px;
+  padding: 0 16px;
 }
 
 a{
   text-decoration: none;
 }
-
+ul,
 li{
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+/* header */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
+}
+.header-wrapper{
+  height: 64px;
+  padding: 20px 40px;
+}
+.header-nav{
+  background-color: #000;
+}
+.nav-list{
+  align-items: center;
+  height: 36px;
+  display: flex;
+}
+.list-items{
+  margin-left: 50px;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* main */
+.main{
+  margin-top: 180px;
+  padding: 0 16px;
+}
+
+.section-catchcopy{}
+.catchcopy-boxes{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3,1fr);
+}
+.catchcopy-box{
+  margin-left: 40px;
+  text-align: center;
+}
+.catchcopy-img{}
+.catchcopy-img img{
+  width: 373.75px;
+  height: 210px;
+}
+.img-content{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+.read-more{
+  display: inline-block;
+  margin-top: 12px;
+  border-bottom: 1px solid #333;
+  animation: ease-in-out;
+}
+.read-more:hover{
+  border: none;
+}
+
+/* top */
+.section-top{
+  display: grid;
+  margin-top: 64px;
+  margin-left: 40px;
+  grid-template-columns: 2fr 1fr;
+  gap: 64px;
+}
+
+
+/* main top*/
+.main-category{}
+.article-top{
+  margin-bottom: 50px;
+  text-align: center;
+}
+.article-title{
+  font-size: 18px;
+  text-align: left;
+}
+.article-date{
+  float: left;
+}
+.article-category{
+  float: left;
+}
+.article-img{}
+.article-img img{
+  width: 759px;
+  height: 427px;
+}
+.article-text-box{
+}
+.article-content{
+  text-align: left;
+}
+
+/* author */
+.sub-category{
+  text-align: center;
+  margin-top: 64px;
+}
+.contents{
+}
+.author{}
+.img-aithor{
+}
+.img-aithor img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.author-name{}
+.profile{
+  text-align: left;
+}
+
+
+/* ranking */
+.ranking{}
+.tanking-title{}
+.ranking-boxes{}
+.ranking-box{}
+.ranking-img{}
+.ranking-img img{
+  width: 345px;
+  height: 194px;
+}
+.ranking-text{
+  text-align: left;
+}
+
+/* atcive */
+.archive{}
+.archive-title{}
+.archive-list{
+  text-align: left;
+}
+.archive-items{}
 

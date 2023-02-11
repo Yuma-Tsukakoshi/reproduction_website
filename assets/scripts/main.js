@@ -68,5 +68,9 @@ $("#link2_btn").on('click',function(){
 
 // ハンバーガ
 $(".togglebutton").on("click",function(){
+  $("#side-menu").toggleClass("active");
   $(".hambarger").toggleClass("active");
+  $(".side-menu-list").toggleClass("active");
 })
+
+

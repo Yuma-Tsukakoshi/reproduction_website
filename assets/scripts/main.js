@@ -65,3 +65,8 @@ $("#link2_btn").on('click',function(){
   $("#js-products-2").show();
   $("#js-products-1").hide();
 })
+
+// ハンバーガ
+$(".togglebutton").on("click",function(){
+  $(".hambarger").toggleClass("active");
+})

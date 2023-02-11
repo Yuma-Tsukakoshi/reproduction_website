@@ -1,3 +1,5 @@
+<!-- TODO ハンバーガーメニュー  -->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StoreSite</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/style/reset.css">
   <link rel="stylesheet" href="./assets/style/style.css">
   <script src="./assets/scripts/jquery-3.6.1.min.js" defer></script>
@@ -23,13 +26,21 @@
 
   <main class="main">
     <h2 class="main-title">Products</h2>
-    <div class="products" id="js-products">
-      <div class="product-box">
-        <img src="./assets/img/item1.jpg" alt="product-img">
-        <h3 class="product-title">プロダクトタイトルプロダクトタイトル</h3>
-        <p class="money">￥99,999+tax</p>
-      </div>
+    <div class="products" id="js-products-1"></div>
+    <div class="products" id="js-products-2"></div>
+    <div class="product-link">
+      <span class="link" id="link1_btn">1</span>
+      <span class="link" id="link2_btn">2</span>
     </div>
   </main>
+
+  <footer class="footer">
+    <ul class="footer-list">
+      <li class="footer-items"><a href="https://www.instagram.com/" target="__brank">INSTAGRAM</a></li>
+      <li class="footer-items"><a href="https://twitter.com/home"target="__brank" >TWIITER</a></li>
+      <li class="footer-items"><a href="https://www.facebook.com/" target="__brank">FASEBOOK</a></li>
+    </ul>
+    <small class="copyright">&copy; Furniture Design</small>
+  </footer>
 </body>
 </html>

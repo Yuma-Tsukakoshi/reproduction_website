@@ -272,6 +272,7 @@ img {
   height: 64px;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 .header-title a > img{
   width: 70%;
@@ -292,16 +293,108 @@ img {
 .products{
   display: flex;
   flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.products div{
+  width: calc(25% - 60px);
+  padding: 10px;
 }
 .product-box{}
-.product-box img{
-  width: 20%;
-  height: 20%;
-
-}
+.product-box img{}
 .product-title,
 .money{
   padding: 4px 0;
   text-align: left;
+  font-size: 14px;
 }
+
+.image-link{
+  cursor: pointer;
+  transition: 1s;
+}
+.image-link:hover{
+  opacity: 0.5;
+}
+
+/* material */
+.product-page{
+  margin-left: 5%;
+}
+.praduct-title{
+  margin-bottom: 20px;
+}
+.product-inner{
+  width: 70%;
+  display: flex;
+  text-align: center;
+  gap: 40px;
+}
+.product-img img{
+  width: 450px;
+}
+.product-img{
+  width: 50%;
+}
+
+.product-content{
+  width: 35%;
+}
+.product-introduce{
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+.product-detail{
+  text-align: left;
+  margin-top: 20px;
+}
+.detail-list{
+  position: relative;
+}
+.text{
+  font-size: 14px;
+  position: absolute;
+  left: 45%;
+}
+.back-to-product{
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* puroduct link */
+.product-link{
+  margin-top: 40px;
+  text-align: center;
+}
+.link{
+  padding: 16px;
+  cursor: pointer;
+}
+
+/* footer */
+.footer{
+  position: relative;
+  bottom: 0;
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+  padding: 36px;
+}
+.footer-list{
+  margin-left: 54px;
+  display: flex;
+  gap: 20px;
+}
+.footer-items{
+  font-size: 12px;
+}
+
+.copyright{
+  display: block;
+}
+
+/* hambarger */
 

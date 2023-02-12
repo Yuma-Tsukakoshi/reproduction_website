@@ -1,5 +1,3 @@
-<!-- TODO ハンバーガーメニュー先のABOUTとCONTACT  -->
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,7 +14,7 @@
 <body>
   <header class="header">
     <h1 class="header-title">
-      <a href="#"><img src="./assets/img/logo.svg" alt="logo"></a>
+      <a href="#" id="init-pages"><img src="./assets/img/logo.svg" alt="logo"></a>
     </h1>
     <div class="togglebutton">
       <span class="hambarger bar1"></span>
@@ -26,8 +24,8 @@
       <nav class="side-menu">
         <ul class="side-menu-list">
           <li class="side-menu-items"><a href="./index.html">PRODUCTS</a></li>
-          <li class="side-menu-items"><a>ABOUT</a></li>
-          <li class="side-menu-items"><a >COMPANY</a></li>
+          <li class="side-menu-items" id="js-about-link"><a>ABOUT</a></li>
+          <li class="side-menu-items" id="js-contact-link"><a>COMPANY</a></li>
           <li class="side-menu-items"><a href="mailto:" >CONTACT</a></li>
         </ul>
       </nav>
@@ -38,6 +36,58 @@
     <h2 class="main-title">Products</h2>
     <div class="products" id="js-products-1"></div>
     <div class="products" id="js-products-2"></div>
+
+    <!-- side-bar-page -->
+    <!-- about -->
+    <div class="about-wrapper" id="js-about">
+      <div class="about-inner">
+        <h2 class="about-title">About</h2>
+        <p class="about-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <p class="about-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="contact-wrapper" id="js-contact">
+      <div class="contact-inner">
+        <h2 class="contact-title">Company</h2>
+      <table>
+        <tr>
+          <td>社名</td>
+          <td>株式会社ファニチャーデザイン</td>
+        </tr>
+        <tr>
+          <td>住所</td>
+          <td>〒107-0062 東京都港区南青山１丁目××××××</td>
+        </tr>
+        <tr>
+          <td>設立</td>
+          <td>XXXX年XX月</td>
+        </tr>
+        <tr>
+          <td>資本金</td>
+          <td>XXXX万円</td>
+        </tr>
+        <tr>
+          <td>従業員数</td>
+          <td>XX名</td>
+        </tr>
+        <tr class="contents">
+          <td rowspan="3">事業内容</td>
+          <td>家具、インテリアの企画・生産</td>
+        </tr>
+        <tr class="contents">
+          <td>家具、インテリアの販売</td>
+        </tr>
+        <tr class="contents">
+          <td>店舗の企画・デザイン・設計</td>
+        </tr>
+      </table>
+      <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6482.583224704448!2d139.725615!3d35.669821!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c820ac932eb%3A0xc68079dd10afd971!2z44CSMTA3LTAwNjIg5p2x5Lqs6YO95riv5Yy65Y2X6Z2S5bGx77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1676156740073!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+    </div>
+
     <div class="product-link">
       <span class="link" id="link1_btn">1</span>
       <span class="link" id="link2_btn">2</span>

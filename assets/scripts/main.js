@@ -66,11 +66,46 @@ $("#link2_btn").on('click',function(){
   $("#js-products-1").hide();
 })
 
+$("#js-about").hide();
+$("#js-about-link").on("click",function(){
+  $(".main-title").hide();
+  $("#js-products-1").hide();
+  $("#js-about").show();
+  $(".product-link").hide();
+  $("#js-contact").hide();
+  $(".hambarger").removeClass("active");
+  $("#side-menu").removeClass("active");
+  $(".side-menu-list").removeClass("active");
+})
+
+$("#js-contact").hide();
+$("#js-contact-link").on("click",function(){
+  $(".main-title").hide();
+  $("#js-products-1").hide();
+  $("#js-contact").show();
+  $(".product-link").hide();
+  $("#js-about").hide();
+  $(".hambarger").removeClass("active");
+  $("#side-menu").removeClass("active");
+  $(".side-menu-list").removeClass("active");
+})
+
 // ハンバーガ
 $(".togglebutton").on("click",function(){
   $("#side-menu").toggleClass("active");
   $(".hambarger").toggleClass("active");
   $(".side-menu-list").toggleClass("active");
+})
+
+// ページの初期化
+$("#init-pages").on("click",function(){
+  $("#js-products-1").show();
+  $("#js-products-2").hide();
+  $(".main-title").show();
+  $(".product-link").show();
+  $("#js-about").hide();
+  $("#js-contact").hide();
+  $(".side-menu").show();
 })
 
 

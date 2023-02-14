@@ -337,4 +337,35 @@ main
 footer
 ===================================================== */
 
-
+.contact-wrapper{
+  background-color: #000;
+}
+.contact-inner{
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  background-color: #fff;
+}
+.section-title{
+  color: #fff;
+}
+.contact-text{
+  width: 50%;
+  color: #fff;
+  margin-top: 20px;
+}
+.contact-inner>form{
+  width: 50%;
+}
+.text{}
+.contact-form-title{}
+.copyright{
+  display: block;
+  text-align: center;
+  color: #fff;
+}

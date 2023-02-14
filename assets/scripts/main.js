@@ -14,3 +14,9 @@ for(let i=0; i<9 ; i++){
 </div>`
 }
 $("#js-sneakers").html(sneakersHTML);
+
+$("#js-toggle-btn").on("click",function(){
+  $(".bar").toggleClass("active");
+  $(".mask").toggleClass("active");
+  $("#side-bar").toggleClass("active");
+})

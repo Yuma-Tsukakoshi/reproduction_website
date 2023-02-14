@@ -294,7 +294,7 @@ hamburger
   height: 2px;
   position: absolute;
   background-color: #000;
-  transform: ease .75s;
+  transition: .5s;
   z-index: 15;
 }
 .bar1{
@@ -308,7 +308,7 @@ hamburger
 }
 
 .bar1.active{
-  transform: rotate(45deg);
+  transform: rotate(405deg);
   top: 35px;
   background-color: #fff;
 }
@@ -317,7 +317,7 @@ hamburger
   background-color: #fff;
 }
 .bar3.active{
-  transform: rotate(-45deg);
+  transform: rotate(-405deg);
   top: 35px;
   background-color: #fff;
 }
@@ -325,14 +325,14 @@ hamburger
 
 .side-bar{
   overflow-y: scroll;
-  width: 20vw;
   height: 100vh;
-  transform: translateX(-150px);
-  transition: ease;
+  width: 20vw;
+  transform: translateX(-250%);
+  transition: 2s;
 } 
 
 .side-bar.active{
-  transform: translateX(0px);
+  transform: translateX(10%);
 }
 .side-bar-list{
   padding: 16px;

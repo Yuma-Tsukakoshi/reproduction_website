@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>media site</title>
   <script src="./assets/scripts/jquery-3.6.1.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
   <script src="./assets/scripts/main.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/style/reset.css">
   <link rel="stylesheet" href="./assets/style/style.css">
@@ -25,9 +29,9 @@
     <div class="mask">
       <nav class="side-bar" id="side-bar">
         <ul class="side-bar-list">
-          <li class="side-bar-items"><a href="#">PICK UP</a></li>
-          <li class="side-bar-items"><a href="#">FEATURE</a></li>
-          <li class="side-bar-items"><a href="#">CONTACT</a></li>
+          <li class="side-bar-items"><a href="#jump_pick_up" id="js-pick_up">PICK UP</a></li>
+          <li class="side-bar-items"><a href="#jump_feature" id="js-feature">FEATURE</a></li>
+          <li class="side-bar-items"><a href="#jump_contact" id="js-contact">CONTACT</a></li>
         </ul>
   
         <ul class="side-sns-list">
@@ -42,19 +46,32 @@
 
   <main class="main">
     <div class="video">
-      <video src="./assets/img/video.mp4" autoplay loop width="100%"></video>
+      <video src="./assets/img/video.mp4" width="100%" autoplay loop></video>
     </div>
 
-    <section class="section pick-up">
+    <section class="section pick-up" id="jump_pick_up">
       <h2 class="section-title">PICK UP</h2>
+      <div class="content">
+        <ul id="slider">
+          <li><img src="./assets/img/pickup1.jpg" alt=""></li>
+          <li><img src="./assets/img/pickup2.jpg" alt=""></li>
+          <li><img src="./assets/img/pickup3.jpg" alt=""></li>
+          <li><img src="./assets/img/pickup4.jpg" alt=""></li>
+          <li><img src="./assets/img/pickup5.jpg" alt=""></li>
+          <li><img src="./assets/img/pickup6.jpg" alt=""></li>
+          <li><img src="./assets/img/pickup7.jpg" alt=""></li>
+          <li><img src="./assets/img/pickup8.jpg" alt=""></li>
+          <li><img src="./assets/img/pickup9.jpg" alt=""></li>
+        </ul>
+      </div>
     </section>
 
-    <section class="section feature" >
+    <section class="section feature" id="jump_feature">
       <h2 class="section-title">FEATURE</h2>
       <div class="sneakers" id="js-sneakers"></div>
     </section>
 
-    <section class="contact-wrapper">
+    <section class="contact-wrapper" id="jump_contact">
       <h2 class="section-title contact">Contact</h2>
       <div class="contact-inner">
         <div class="contact-text">

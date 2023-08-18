@@ -36,7 +36,7 @@ $(function(){
   /*=================================================
   フェード表示
   ===================================================*/
-  $(".inview").on("inview", function (event, isInView) {
+  $(".inview").on("inview", function (isInView) {
     if (isInView) {
       // 要素（inviewクラス）が表示されたらshowクラスを追加する
       $(this).stop().addClass("show");
@@ -75,11 +75,12 @@ $(function(){
     ===================================================*/
     // 画面下から#galleryまでの距離を取得
     let gallery_position = $('#gallery').offset().top - $(window).height();
+    console.log("gallery:",$('#gallery').offset().top)
     // 画面下から#accessまでの距離を取得
     let access_position = $('#access').offset().top - $(window).height();
 
     // window.innerWidthで画面幅を取得
-    // PC表示の場合の処理（画面幅が900pxより大きい場合　※900pxはCSSのブレークポイントとあわせる）
+    // PC表示の場合の処理（画面幅が900pxより大きい場合 ※900pxはCSSのブレークポイントとあわせる）
     if (window.innerWidth > 900) {
       // #galleryが表示された場合（スクロール位置が、画面下から#galleryまでの距離を超えた場合）
       if(scroll > gallery_position){
@@ -106,6 +107,7 @@ $(function(){
     Accessの背景画像を表示
     ===================================================*/
     // 画面下から#contactまでの距離を取得
+    //「offset()」では、対象となるHTML要素の左上を原点としたX・Y座標を取得 top : left :
     let contact_position = $('#contact').offset().top - $(window).height();
 
     // #accessが表示された場合

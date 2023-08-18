@@ -392,7 +392,8 @@ Mainvisual
 #mainvisual img{
   width: calc(100%/3);
   height: 100vh;
-  /* flex-shrink: 0; */
+  /* 画像がそのまま拡大されるようにするための処理 */
+  flex-shrink: 0;
   object-fit: cover;
   /* 要素のコンテンツボックス全体を埋めるように拡大縮小されます。 */
 }
